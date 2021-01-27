@@ -1,0 +1,222 @@
+@import "normalize/normalize.css";
+@import "bootstrap/bootstrap.min.css";
+@import "fontawesome/css/all.css";
+@import "variables.scss";
+
+:root {
+    font-size: 14px;
+    scroll-behavior: smooth;
+    font-family: $font-family;
+}
+
+header {
+    background-color: $primary_color;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    .logo {
+        height: 60px;
+        width: 60px;
+        margin-left: 15px;
+    }
+}
+
+.navigation-bar {
+    width: 100%;
+    margin-left: 100px;
+    &__list {
+        display: flex;
+        padding-left: 0px;
+        justify-content: space-around;
+        margin-bottom: 0;
+    }
+    &__list-item {
+        list-style-type: none;
+        flex: 2;
+    }
+    a {
+        text-decoration: none;
+        color: $fourth_color;
+        font-weight: 500;
+        font-size: $link-font-size;
+        &:hover {
+            color: $secondary_color;
+            font-weight: 700;
+        }
+
+        &.dropdown-item {
+            color: $third_color;
+        }
+    }
+    .social-links {
+        a {
+            padding-left: 10px;
+        }
+    }
+}
+
+.collapsed-navbar {
+    justify-content: flex-end;
+    height: 95px;
+}
+
+#navbarToggleExternalContent {
+    .list-group {
+        background-color: $primary_color;
+        ul {
+            list-style: none;
+            a {
+                list-style: none;
+                color: rgb(255, 255, 255);
+                padding-left: 10px;
+            }
+        }
+        &-item-active:hover {
+            background-color: $third_color;
+            border-radius: 5px;
+        }
+        .dropdown-toggle {
+            padding: 0px;
+            background: transparent;
+            border: none;
+            font-weight: 500;
+            &:hover {
+                padding: 5px;
+            }
+            .dropdown:hover {
+                background-color: $third_color;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            a.dropdown-item {
+                color: $ligth_color;
+            }
+            ul li.social-links {
+                flex: 1;
+            }
+        }
+    }
+}
+
+main {
+    margin: 50px 0;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $primary_color;
+    justify-content: space-between;
+    padding: 45px 100px;
+    h3 {
+        color: $fourth_color;
+        font-size: $footer_font_size;
+        text-transform: uppercase;
+    }
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+        margin-bottom: 0;
+        li {
+            padding: 10px 0;
+            padding-bottom: 0;
+            a {
+                text-decoration: none;
+                color: $fourth_color;
+                font-weight: 400;
+                font-size: $footer_font_size * 0.8;
+                font-family: $font-family;
+                &:hover {
+                    color: $ligth_color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    p {
+        text-decoration: none;
+        color: $fourth_color;
+        font-weight: 400;
+        font-size: $footer_font_size * 0.8;
+        font-family: $font-family;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    footer {
+        padding: 45px 50px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    footer {
+        padding: 45px 0;
+        justify-content: space-around;
+        section {
+            width: 45%;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    footer {
+        padding: 45px 10px;
+        justify-content: space-around;
+        section {
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+}
+
+//----------------------------- Operations ----------------------------------
+
+$paddings: 0,10,20,30,40;
+
+@each $padding in $paddings {
+    .pl-#{$padding} {
+        padding-left: $padding * 1px;
+    }
+    .pt-#{$padding} {
+        padding-top: $padding * 1px;
+    }
+    .pb-#{$padding} {
+        padding-bottom: $padding * 1px;
+    }
+    .pr-#{$padding} {
+        padding-right: $padding * 1px;
+    }
+}
+
+
+
+$margins: 0,10,20,30,40;
+
+@each $margin in $margins {
+    .ml-#{$margin} {
+        margin-left: $margin * 1px;
+    }
+    .mt-#{$margin} {
+        margin-top: $margin * 1px;
+    }
+    .mb-#{$margin} {
+        margin-bottom: $margin * 1px;
+    }
+    .mr-#{$margin} {
+        margin-right: $margin * 1px;
+    }
+} 
+
+
+
+@import "index.scss";
+@import "products.scss";
+@import "jobs.scss";
+@import "contact.scss";

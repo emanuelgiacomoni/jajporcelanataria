@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px; 
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+}
+
+.subtitulo {
+    color: #c7bbbb;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.parrafo {
+    color: blue;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "proza libre", sans-serif;
+    font-size: 1.2rem;
+}
+
+nav ul, nav ul a {
+    color: #e98324;
+    font-style: bold;
+    font-weight: bold;
+    font-family: "proza libre", sans-serif;
+    display: inline-block;
+}
+
+main ul {
+    color: #176607;
+}
+
+section ul, section ul a {
+    color: #35f0f0;
+}
+
+table ol, table ul, table td {
+    color: #fc004c;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "proza libre", sans-serif;
+    font-size: 1rem;
+}
+
+table th {
+    color: #1b5700;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "proza libre", sans-serif;
+    font-size: 1rem;
+}
+
+header {
+    background-image: src="";
+}
+
+form {
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: normal;
+    font-family: "proza libre", sans-serif;
+    font-weight: normal;
+}
+
+form div {
+    margin: 20px;
+    margin-left: 0px;
+}
+
+form input, form select, form textarea {
+    background-color: #a7a4a4;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    margin-left: 15px;
+    margin-top: 50px;
+}
+
+footer {
+    margin-left: 15px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+li a {
+    display: inline-block;
+}
+
+.list li {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #8b008b;
+}
+
+.footer-section {
+    display: inline-block;
+    width: 24%;
+}
+
+section ul li {
+    display: block;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+.footer-section ul {
+    padding-left: 0;
+}
+
+ul {
+    width: 100%;
+}
+
+nav li {
+    width: 24%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+}
+
+main p {
+    margin-top: 30px;
+}
+
+main #client-section img {
+    width: 70%;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+main #client-section div {
+    width: 24%;
+    display: inline-block;
+    border-style: solid;
+    border-color: saddlebrown;
+}
+
+#section-client {
+    margin-top: 50px;
+}
+
+/* .main-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+ */
+
+.main-jobs {
+    display: block;
+    text-align: left;
+}
+
+div .main-jobs img {
+    margin-top: 25px;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-section {
+    display: grid;
+    grid-template-areas: "subtitulo subtitulo subtitulo" "parrafo imagen1 imagen2" "parrafo imagen3 imagen4";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 75px 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 0 30px 100px 10px;
+}
+
+.main-section h2.subtitulo {
+    grid-area: subtitulo;
+}
+
+.main-section p.parrafo {
+    grid-area: parrafo;
+    margin-top: 0;
+}
+
+.main-section img {
+    width: 100%;
+}
+
+.main-section img:nth-of-type(1) {
+    grid-area: imagen1;
+}
+
+.main-section img:nth-of-type(2) {
+    grid-area: imagen2;
+}
+
+.main-section img:nth-of-type(3) {
+    grid-area: imagen3;
+}
+
+.main-section img:nth-of-type(4) {
+    grid-area: imagen4;
+}
+
+.animation-image img {
+    transition: 250ms linear;
+}
+
+.animation-image img:hover {
+    transform: scale(1.2);
+}
+
+.animation-link a:hover {
+    transform: scale(1.5);
+    background-color: rgb(255, 255, 255);
+}
+
+.animation-button:hover {
+    transform: scale(1.2);
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-works {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-works a {
+    font-size: 1rem;
+    font-family: "proza libre", sans-serif;
+    font-weight: bold;
+    color: #e98324;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.nav-works{
+    padding-left: 0;
+}
+
+.main-jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 75px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 0 30px 100px 10px;
+}
+
+.main-jobs h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.main-works {
+    display: flex;
+}
+
+.main-works div:nth-of-type(1) {
+    flex: 1;
+}
+
+.main-works div:nth-of-type(2) {
+    flex: 4;
+}
+
+a:active{
+    /*ver como hacer boton activo/*
+}

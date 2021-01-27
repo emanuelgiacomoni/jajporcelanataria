@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> J.A.J. Porcelanataria </title>
+	<link rel="stylesheet" href="./styles/styles.css">
+	<link rel="stylesheet" href="./styles/products.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<img src="./assets/logo.png" alt="Logo" class="logo">
+		<nav class="navigation-bar d-none d-sm-block">
+			<div>
+				<ul class="navigation-bar__list">
+					<li class="navigation-bar__list-item">
+						<a href="./index.html">Nosotros</a>
+					</li>
+					<li class="navigation-bar__list-item">
+						<div class="navigation-bar__dropdown dropdown">
+							<a href="./products.html">Productos</a>
+							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="./jobs.html#bachas">Bachas</a>
+								<a class="dropdown-item" href="./jobs.html#mesadas">Mesadas</a>
+								<a class="dropdown-item" href="./jobs.html#nichos">Nichos</a>
+								<a class="dropdown-item" href="./jobs.html#escaleras">Escaleras</a>
+								<a class="dropdown-item" href="./jobs.html#mobiliario">Mobiliario</a>
+							</div>
+						</div>
+					</li>
+					<li class="navigation-bar__list-item">
+						<div class="navigation-bar__dropdown dropdown">
+							<a href="./jobs.html">Trabajos</a>
+							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="./jobs.html#bachas">Bachas</a>
+								<a class="dropdown-item" href="./jobs.html#mesadas">Mesadas</a>
+								<a class="dropdown-item" href="./jobs.html#nichos">Nichos</a>
+								<a class="dropdown-item" href="./jobs.html#escaleras">Escaleras</a>
+								<a class="dropdown-item" href="./jobs.html#mobiliario">Mobiliario</a>
+							</div>
+						</div>
+					</li>
+					<li class="navigation-bar__list-item">
+						<a href="./contact.html">Contacto</a>
+					</li>
+					<li class="navigation-bar__list-item navigation-bar__list-item--social"  class="social-links">
+						<a href="www.facebook.com"> <i class="fab fa-facebook-f"></i></a>
+						<a href="www.instagram.com"> <i class="fab fa-instagram"></i></a>
+						<a href="www.youtube.com"> <i class="fab fa-youtube"></i></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="fixed-top d-sm-none">
+			<nav class="navbar navbar-dark collapsed-navbar">
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</nav>
+			<div class="collapse" id="navbarToggleExternalContent">
+				<div class="list-group">
+					<ul>
+						<li class="list-group-item-active">
+							<a href="./index.html">Nosotros</a>
+						</li>
+						<li>
+							<a href="./products.html">Productos</a>
+							<ul>
+								<li><a class="dropdown-item" href="./jobs.html#bachas">Bachas</a></li>
+								<li><a class="dropdown-item" href="./jobs.html#mesadas">Mesadas</a></li>
+								<li><a class="dropdown-item" href="./jobs.html#nichos">Nichos</a></li>
+								<li><a class="dropdown-item" href="./jobs.html#escaleras">Escaleras</a></li>
+								<li><a class="dropdown-item" href="./jobs.html#mobiliario">Mobiliario</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="./jobs.html">Trabajos</a>
+							<ul>
+								<li><a class="dropdown-item" href="./products.html#bachas">Bachas</a></li>
+								<li><a class="dropdown-item" href="./products.html#mesadas">Mesadas</a></li>
+								<li><a class="dropdown-item" href="./products.html#nichos">Nichos</a></li>
+								<li><a class="dropdown-item" href="./products.html#escaleras">Escaleras</a></li>
+								<li><a class="dropdown-item" href="./products.html#mobiliario">Mobiliario</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="./contact.html">Contacto</a>
+						</li>
+						<li class="social-links">
+							<a href="www.facebook.com"> <i class="fab fa-facebook-f"></i></a>
+							<a href="www.instagram.com"> <i class="fab fa-instagram"></i></a>
+							<a href="www.youtube.com"> <i class="fab fa-youtube"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="container products">
+		<div class="row">
+			<nav class="col-md-2 nav-categories">
+				<div>
+					<h2 class="subtitle">Productos</h2>
+					<aside>
+						<ul class="nav-products">
+							<li><a href="#bachas">Bachas</a></li>
+							<li><a href="#mesadas">Mesadas</a></li>
+							<li><a href="#nichos">Nichos</a></li>
+							<li><a href="#escaleras">Escaleras</a></li>
+							<li><a href="#mobiliario">Mobiliario</a></li>
+						</ul>
+					</aside>
+				</div>
+			</nav>
+			<div class="col-md-10">
+				<div class="hidden-top" id="bachas"></div>
+				<h2 class="subtitle">Bachas </h2>
+				<div class="row">
+					<img class="col-md-3" src="./assets/images-products/bachas/7.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/bachas/1.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/bachas/2.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/bachas/3.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/bachas/4.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/bachas/5.jpg" alt="">
+				</div>
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Producto</th>
+								<th scope="col">Caracteristicas</th>
+								<th scope="col">Observaciones</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Embutida</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Sobrepuesta</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Apoyada</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Semi-Embutida</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Esculpida</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>De pared</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="hidden-top" id="mesadas"></div>
+				<h2 class="subtitle">Mesadas </h2>
+				<div class="row">
+					<img class="col-md-3" src="./assets/images-products/mesadas/1.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/mesadas/2.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/mesadas/3.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/mesadas/5.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/mesadas/7.jpg" alt="">
+				</div>
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Producto</th>
+								<th scope="col">Caracteristicas</th>
+								<th scope="col">Observaciones</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Con zona humeda</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Isla</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="hidden-top" id="nichos"></div>
+				<h2 class="subtitle">Nichos </h2>
+				<div class="row">
+					<img class="col-md-3" src="./assets/images-products/nichos/1.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/nichos/2.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/nichos/3.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/nichos/4.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/nichos/5.jpg" alt="">
+				</div>
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Producto</th>
+								<th scope="col">Caracteristicas</th>
+								<th scope="col">Observaciones</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Embutido</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Borde recto</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Borde diamante</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="hidden-top" id="escaleras"></div>
+				<h2 class="subtitle">Escaleras </h2>
+				<div class="row">
+					<img class="col-md-3" src="./assets/images-products/escaleras/2.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/escaleras/10.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/escaleras/11.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/escaleras/12.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/escaleras/13.jpg" alt="">
+				</div>
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Producto</th>
+								<th scope="col">Caracteristicas</th>
+								<th scope="col">Observaciones</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Flotante</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Apoyada</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="hidden-top" id="mobiliario"></div>
+				<h2 class="subtitle">Mobiliario </h2>
+				<div class="row">
+					<img class="col-md-3" src="./assets/images-products/mobiliario/2.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/mobiliario/5.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/mobiliario/7.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/mobiliario/6.jpg" alt="">
+					<img class="col-md-3" src="./assets/images-products/mobiliario/3.jpg" alt="">
+				</div>
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Producto</th>
+								<th scope="col">Caracteristicas</th>
+								<th scope="col">Observaciones</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Mesa comedor</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Mesa ratona</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	</main>
+	<footer>
+		<section>
+			<h3>Ayuda</h3>
+			<ul>
+				<li>
+					<a href="">Terminos y Condiciones</a>
+				</li>
+				<li>
+					<a href="">Politicas de Privacidad</a>
+				</li>
+				<li>
+					<a href="">Contacto</a>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Empresa</h3>
+			<ul>
+				<li>
+					<a href="">Tiendas y Showrooms</a>
+				</li>
+				<li>
+					<a href="">Lorem ipsum</a>
+				</li>
+				<li>
+					<a href="">Lorem ipsum</a>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Ubicacion</h3>
+			<ul>
+				<li>
+					<p>Cordoba 1624, Rosario, Santa Fe</p>
+				</li>
+				<li>
+					<a target="_blank" href="https://wa.me/+5493416456216"><i class="fab fa-whatsapp"></i> +54 9 341
+						645-6216</a>
+				</li>
+				<li>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.2276756596807!2d-60.647574585254134!3d-32.94499787913388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1600138a89%3A0xc66a9ae544cfb72a!2sC%C3%B3rdoba%201624%2C%20S2000AWZ%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1610229658785!5m2!1ses-419!2sar"
+						width="250" height="150" frameborder="1" style="border:0;" allowfullscreen="true"
+						aria-hidden="false" tabindex="0">
+					</iframe>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Social</h3>
+			<ul>
+				<li>
+
+					<a href="www.facebook.com"> <i class="fab fa-facebook-f"></i> Facebook</a>
+				</li>
+				<li>
+
+					<a href="www.instagram.com"> <i class="fab fa-instagram"></i> Instagram</a>
+				</li>
+				<li>
+
+					<a href="www.youtube.com"> <i class="fab fa-youtube"></i> Youtube</a>
+				</li>
+			</ul>
+		</section>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

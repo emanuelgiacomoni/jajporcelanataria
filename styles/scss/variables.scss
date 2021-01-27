@@ -1,0 +1,32 @@
+//$theme can be light, blue or dark
+$theme: "light";
+
+$primary_color: #313131;
+$secondary_color: #4b4040;
+$third_color: #696969;
+$fourth_color: #e0e0e0;
+$ligth_color: #fff;
+
+$title_font_size: 2rem;
+$subtitle_font_size: 0.8 * $title_font_size;
+$regular_font_size: 0.6 * $title_font_size;
+$link-font-size: 0.5 * $title_font_size;
+$footer_font_size: 0.3 * $title_font_size;
+$font-family:  "Montserrat", Helvetica, Arial, sans-serif;
+
+@if ($theme == "blue") {
+    $primary_color: #0f123a;
+    $secondary_color: #346a74;
+    $third_color: #457896;
+    $fourth_color: #cc871f;
+    $ligth_color: #fff;
+}
+
+@if ($theme == "dark") {
+    $primary_color: darken($primary_color, 20);
+    $secondary_color: lighten($secondary_color, 5);
+    $third_color: lighten($third_color, 10);
+    $fourth_color: darken($fourth_color, 15);
+    $ligth_color: darken($ligth_color, 10);
+}
+

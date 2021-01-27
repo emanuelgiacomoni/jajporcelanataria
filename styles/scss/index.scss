@@ -1,0 +1,93 @@
+.ppal {
+    @extend .mt-0;
+
+    #carousel {
+        z-index: 1;
+    }
+
+    #carouselExampleFade {
+        height: calc(100vh - 95px);
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+
+            &:first-of-type {
+                display: none;
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        main {
+            margin: 10px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .about-us__description,
+        .subtitle {
+            padding-left: 15px;
+            margin-bottom: 50px;
+        }
+
+        .container.client .subtitle {
+            margin-bottom: 15px;
+        }
+        .row.m-top {
+            .row.m-top {
+                margin-top: 20px;
+            }
+            .col-md-3 img {
+                margin-bottom: 30px;
+            }
+
+            .col-md-6 {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.about-us {
+    @extend .mt-40;
+
+    align-items: center;
+    box-shadow: 10px 10px 5px $fourth_color;
+
+    &__title {
+         @extend .mb-30;
+    }
+
+    &__description-container {
+        padding-left: 0;
+    }
+
+    &__image-container {
+        @extend .mb-30;
+    }
+
+    &__image {
+        width: 100%;
+       
+    }
+}
+
+.clients {
+    @extend .pb-30;
+    @extend .mb-40;
+    @extend .mt-40;
+    @extend .pt-40;
+
+    &__title {
+        @extend .mb-30;
+    }
+
+    &__images-container {
+        @extend .pb-40;
+    }
+
+    &__image {
+        width: 30%;
+    }
+}

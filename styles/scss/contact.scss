@@ -1,0 +1,19 @@
+.contact {
+    &__information {
+        padding-left: 30px;
+        border-left: 1px solid $third_color;
+        margin-left: 15px;
+        font-weight: 600;
+    }
+    
+    &__information-subtitle {
+        font-size: $regular_font_size;
+        font-weight: 600;
+    }
+    
+    &__information-description{
+        font-size: $link-font-size;
+        color: $third_color;
+    }
+
+}
