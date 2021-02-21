@@ -1,0 +1,25 @@
+.term-cond {
+    h2 {
+        margin-bottom: 35px;
+        font-size: $title_font_size;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: $subtitle_font_size;
+        margin-bottom: 25px;
+    }
+    h4 {
+        font-size: $regular_font_size;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: $link-font-size;
+        margin-bottom: 15px;
+    }
+    .last-paragraph {
+        margin-bottom: 40px;
+    }
+    span{
+        font-weight: bold;
+    }
+}

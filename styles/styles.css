@@ -30,7 +30,10 @@ header {
   .navigation-bar__list-item {
     list-style-type: none;
     flex: 2; }
+    .navigation-bar__list-item .dropdown-toggle {
+      color: white; }
   .navigation-bar a {
+    padding-right: 15px;
     text-decoration: none;
     color: #e0e0e0;
     font-weight: 500;
@@ -59,6 +62,7 @@ header {
     background-color: #696969;
     border-radius: 5px; }
   #navbarToggleExternalContent .list-group .dropdown-toggle {
+    color: white;
     padding: 0px;
     background: transparent;
     border: none;
@@ -85,7 +89,7 @@ footer {
   padding: 45px 100px; }
   footer h3 {
     color: #e0e0e0;
-    font-size: 0.6rem;
+    font-size: 1.2rem;
     text-transform: uppercase; }
   footer ul {
     padding-left: 0;
@@ -98,7 +102,7 @@ footer {
         text-decoration: none;
         color: #e0e0e0;
         font-weight: 400;
-        font-size: 0.48rem;
+        font-size: 0.8rem;
         font-family: "Montserrat", Helvetica, Arial, sans-serif; }
         footer ul li a:hover {
           color: #fff;
@@ -107,7 +111,7 @@ footer {
     text-decoration: none;
     color: #e0e0e0;
     font-weight: 400;
-    font-size: 0.48rem;
+    font-size: 0.8rem;
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
     margin-bottom: 0; }
 
@@ -289,8 +293,10 @@ footer {
   .about-us__image {
     width: 100%; }
 
-.clients__image {
-  width: 30%; }
+.clients {
+  box-shadow: 10px 10px 5px #e0e0e0; }
+  .clients__image {
+    width: 30%; }
 
 .products {
   margin-left: 30px; }
@@ -312,6 +318,9 @@ footer {
   .products .col-md-10 {
     padding-left: 15px;
     margin-top: 0px; }
+    .products .col-md-10 .images-container {
+      box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+      padding: 15px 0 0; }
     .products .col-md-10 img {
       margin-bottom: 15px;
       object-fit: contain;
@@ -323,7 +332,10 @@ footer {
     margin-bottom: 0px; }
   .products .table-responsive {
     margin-top: 30px;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+    margin: 30px -15px;
+    width: calc(100% + 30px); }
   @media (max-width: 768px) {
     .products .nav-categories {
       position: relative; } }
@@ -346,26 +358,30 @@ footer {
     .jobs .nav-jobs a {
       color: #313131; }
   .jobs .col-md-10 section {
-    margin-left: 30px; }
+    margin-left: 0px; }
   .jobs .row {
     margin-bottom: 50px; }
     .jobs .row .subtitle {
-      font-size: 1.2rem;
-      margin-bottom: 30px; }
+      font-size: 2rem;
+      margin-bottom: 30px;
+      margin-left: 0px; }
     .jobs .row .hidden-top {
       visibility: hidden;
       height: 100px;
       margin-top: -100px; }
     .jobs .row img {
       margin-bottom: 20px;
-      margin-top: 20px;
+      margin-top: 0px;
       transition: 250ms linear; }
     .jobs .row img:hover {
       transform: scale(1.8);
       z-index: 2; }
-  @media (max-width: 575px) {
-    .jobs .col-md-10 section {
-      margin-left: 0; } }
+    .jobs .row .images-container {
+      box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+      padding: 15px 0 0; }
+    @media (max-width: 575px) {
+      .jobs .row .col-md-10 section {
+        margin-left: 0; } }
 
 .contact__information {
   padding-left: 30px;
@@ -380,3 +396,46 @@ footer {
 .contact__information-description {
   font-size: 1rem;
   color: #696969; }
+
+.term-cond h2 {
+  margin-bottom: 35px;
+  font-size: 2rem;
+  font-weight: 600; }
+
+.term-cond h3 {
+  font-size: 1.6rem;
+  margin-bottom: 25px; }
+
+.term-cond h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px; }
+
+.term-cond p {
+  font-size: 1rem;
+  margin-bottom: 15px; }
+
+.term-cond .last-paragraph {
+  margin-bottom: 40px; }
+
+.term-cond span {
+  font-weight: bold; }
+
+.priv-pol h2 {
+  margin-bottom: 35px;
+  font-size: 2rem;
+  font-weight: 600; }
+
+.priv-pol h3 {
+  font-size: 1.6rem;
+  margin-bottom: 25px; }
+
+.priv-pol h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px; }
+
+.priv-pol p {
+  font-size: 1rem;
+  margin-bottom: 15px; }
+
+.priv-pol .last-paragraph {
+  margin-bottom: 40px; }

@@ -29,6 +29,11 @@
     .col-md-10 {
         padding-left: 15px;
         margin-top: 0px;
+        .images-container {
+            box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px,
+                rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+            padding: 15px 0 0;
+        }
         img {
             margin-bottom: 15px;
             object-fit: contain;
@@ -47,6 +52,10 @@
     .table-responsive {
         margin-top: 30px;
         margin-bottom: 100px;
+        box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px,
+            rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+        margin: 30px -15px;
+        width: calc(100% + 30px);
     }
 
     @media (max-width: 768px) {

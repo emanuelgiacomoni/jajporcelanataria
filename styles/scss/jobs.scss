@@ -23,15 +23,17 @@
 
     .col-md-10 {
         section {
-            margin-left: 30px;
-        }
+            margin-left: 0px;
+        }     
     }
 
+    
     .row {
         margin-bottom: 50px;
         .subtitle {
-            font-size: $regular_font_size;
+            font-size: $title_font_size;
             margin-bottom: 30px;
+            margin-left: 0px;
         }
         .hidden-top {
             visibility: hidden;
@@ -40,13 +42,17 @@
         }
         img {
             margin-bottom: 20px;
-            margin-top: 20px;
+            margin-top: 0px;
             transition: 250ms linear;
         }
         img:hover {
             transform: scale(1.8);
             z-index: 2;
         }
+        .images-container {
+            box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px,
+                rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+            padding: 15px 0 0;
     }
 
     @media (max-width: 575px) {
@@ -54,4 +60,5 @@
             margin-left: 0;
         }
     }
+}
 }

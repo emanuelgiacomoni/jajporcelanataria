@@ -51,12 +51,11 @@
 
 .about-us {
     @extend .mt-40;
-
     align-items: center;
     box-shadow: 10px 10px 5px $fourth_color;
 
     &__title {
-         @extend .mb-30;
+        @extend .mb-30;
     }
 
     &__description-container {
@@ -69,7 +68,6 @@
 
     &__image {
         width: 100%;
-       
     }
 }
 
@@ -78,13 +76,16 @@
     @extend .mb-40;
     @extend .mt-40;
     @extend .pt-40;
+    box-shadow: 10px 10px 5px $fourth_color;
 
     &__title {
         @extend .mb-30;
+       
     }
 
     &__images-container {
         @extend .pb-40;
+        
     }
 
     &__image {
